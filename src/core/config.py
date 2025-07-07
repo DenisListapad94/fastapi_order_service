@@ -10,6 +10,8 @@ class DBSettings(BaseSettings):
     user: str = os.environ.get("DB_USER")
     password: str = os.environ.get("DB_PASS")
     name: str = os.environ.get("DB_NAME")
+    test_name: str = os.environ.get("TEST_DB_NAME")
+
 
 class Settings():
     db: DBSettings = DBSettings()
